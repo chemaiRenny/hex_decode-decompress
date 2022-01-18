@@ -28,7 +28,7 @@ str_buffer decompress(char *in_stream)
     comp_stream.next_out = (Bytef *)out_stream;
     
     //decompression
-    //inflateInit(&comp_stream); //zlib compressed
+    //inflateInit(&comp_stream); //zlib compressed 
     inflateInit2( &comp_stream, 16 + MAX_WBITS); //gzip
     inflate(&comp_stream,Z_NO_FLUSH);
     inflateEnd(&comp_stream);
