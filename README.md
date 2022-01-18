@@ -10,8 +10,8 @@ The main file combines the hex_decode and  decmp files which decode and decompre
 The makefile  compiles the main and the client files producing two outputs main and 
 client files
 
--command: 
--make all
+- command: 
+- make all
 
 Independent hex-decoder and gzip decompressor can be also produced  
 
