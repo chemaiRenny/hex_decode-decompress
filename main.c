@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "hex_decode.c"
-#include "decmp.c"
+#include "main.h"
 
 int main(int argc,char **argv)
 {
