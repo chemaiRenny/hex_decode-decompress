@@ -3,12 +3,19 @@ cc=gcc
 all:main client
 
 #main file(combination of decode and decompress)
+#object files
 
 main.o:main.c
-	$(cc) -c main.c -lz
+	$(cc) -c main.c 
 
-main:main.o
-	$(cc) main.o -o main -Wall -Wextra -std=c18 -pedantic -lz
+hex_decode.o:hex_decode.c 
+	$(cc) -c hex_decode.c
+
+decmp.o:decmp.c main.h
+	$(cc) -c  decmp.c
+
+main:main.o hex_decode.o decmp.o
+	$(cc) main.o  hex_decode.o decmp.o -o main -Wall -Wextra -std=c18 -pedantic -lz
 
 #make client
 client:client.c
