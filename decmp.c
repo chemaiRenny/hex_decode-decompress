@@ -2,15 +2,16 @@
 #include <zlib.h>
 #include <string.h>
 
-typedef struct str_buffer
+typedef struct string_buffer
 {
     char buf[1024];
-}str_buffer;
+}string_buffer;
+string_buffer decompress(char *in_stream);
 
 
-str_buffer decompress(char *in_stream)
+string_buffer decompress(char *in_stream)
 {
-    str_buffer str1={0};
+    string_buffer str1={0};
     char out_stream[1024];
     
     //zlib struct
@@ -28,7 +29,7 @@ str_buffer decompress(char *in_stream)
     comp_stream.next_out = (Bytef *)out_stream;
     
     //decompression
-    //inflateInit(&comp_stream); //zlib compressed 
+    //inflateInit(&comp_stream); //zlib compressed
     inflateInit2( &comp_stream, 16 + MAX_WBITS); //gzip
     inflate(&comp_stream,Z_NO_FLUSH);
     inflateEnd(&comp_stream);
