@@ -13,10 +13,12 @@ client files
 - command: 
 - make all
 
-Independent hex-decoder and gzip decompressor can be also produced  
+Independent hex-decoder and gzip decompressor and main objects can be also produced  
 
-- make hex_decode and make decompress 
+- make hex_decode.o, make decmp.o and make main.o
 
 Cleaning object and executable files can be done using 
 
 - make clean 
+
+Regards
