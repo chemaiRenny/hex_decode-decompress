@@ -3,10 +3,6 @@
 #include <stdlib.h>
 #include "hex_decode.c"
 #include "decmp.c"
-#if defined main
-    printf("Main exists");
-#undef main
-#endif
 
 int main(int argc,char **argv)
 {
