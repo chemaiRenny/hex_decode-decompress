@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "main.h"
+#include "main.h" 
 
 int main(int argc,char **argv)
 {
     if (argc < 2)
     {
 
-        printf("Usage:\n\tmain <hex-encoded-compressed string>");
+        printf("Usage:\n\tmain  <hex-encoded-compressed string>");
         exit(EXIT_FAILURE);
     }
     char *input = argv[1];
