@@ -7,6 +7,3 @@
 #include <sys/socket.h>
 #include <stdlib.h>
 #include <arpa/inet.h>
-
-
-
