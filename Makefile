@@ -1,6 +1,7 @@
 cc=gcc
 
 all:main client
+decompress.o:decmp.o
 
 #main file(combination of decode and decompress)
 #object files
