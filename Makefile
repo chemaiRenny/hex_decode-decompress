@@ -21,4 +21,4 @@ decompress:decmp #make decompress standalone
 files="main client"
 
 clean:
-	rm *.o $(files) 
+	rm *.o "$(files)"
