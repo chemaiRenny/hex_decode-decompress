@@ -15,7 +15,7 @@ client files
 
 Independent hex-decoder and gzip decompressor can be also produced  
 
--make hex_decode and make decompress 
+- make hex_decode and make decompress 
 
 Cleaning object and executable files can be done using 
 
