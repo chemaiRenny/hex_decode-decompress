@@ -20,4 +20,4 @@ make decompress
 
 Cleaning object and executable files can be done using 
 
-make clean
+make clean 
