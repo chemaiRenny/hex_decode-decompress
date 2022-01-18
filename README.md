@@ -3,6 +3,9 @@ what a word play!!
 
 This is program decodes and decompresses hex-encode compressed string from a server through a client
 
+## Requirements
+- make 
+- c compiler preferably gcc. Using another compiler will require editing of the makefile
 ## How it works
 
 The main file combines the hex_decode and  decmp files which decode and decompress hex-encoded string respectively
