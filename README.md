@@ -1,7 +1,7 @@
 # Hex decode and decompress encoded and compressed string
 what a word play!!
 
-This is program decodes and decompresses hex-encode compressed string from a server through a client
+This is program decodes and decompresses hex-encode compressed string from a server through a tcp client
 
 ## Requirements
 - make 
