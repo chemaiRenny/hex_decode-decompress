@@ -3,7 +3,6 @@ cc=gcc
 all:main client
 decompress.o:decmp.o
 
-#main file(combination of decode and decompress)
 #object files
 
 main.o:main.c
@@ -15,6 +14,7 @@ hex_decode.o:hex_decode.c
 decmp.o:decmp.c main.h
 	$(cc) -c  decmp.c
 
+#main file(combination of decode and decompress)
 main:main.o hex_decode.o decmp.o
 	$(cc) main.o  hex_decode.o decmp.o -o main -Wall -Wextra -std=c18 -pedantic -lz
 
@@ -22,11 +22,8 @@ main:main.o hex_decode.o decmp.o
 client:client.c
 	$(cc) client.c -o client -Wall -Wextra -std=c18 -pedantic 
 
-
-decompress:decmp #make decompress standalone
-
 #clean files
-files="main client"
+files=main client
 
 clean:
-	rm *.o "$(files)"
+	rm *.o $(files)
