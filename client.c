@@ -24,7 +24,7 @@ int main()
     server_addr.sin_addr.s_addr = inet_addr(IP);
     server_addr.sin_port = htons(PORT);
 
-    //SEND REQUESTsu
+    //SEND REQUEST
     if (connect(sk_desc,(SA*)&server_addr, sizeof(server_addr)) != 0)
     {
         printf("Connection Error.\n");
